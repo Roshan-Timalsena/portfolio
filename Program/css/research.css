@@ -1,0 +1,26 @@
+/*defining the position of the div*/
+.reference1{
+	margin-top: 25px;
+}
+/*styling the paragraphs inside the divs*/
+.reference1 p,.reference2 p{
+	color:whitesmoke;
+	margin-top: 35px;
+	padding:17px;
+	font-size: 17px;
+	line-height: 1.5;	/*Set the line height for elements in side paragraph*/
+}
+/*styling the divs*/
+.reference1,.reference2{
+	border:2px solid steelblue;
+	border-radius: 30px;
+	width: 75%;
+}
+/*defining position of heading inside the reference1 and reference2 div*/
+.reference1 h1,.reference2 h1{
+	margin-top: 20px;
+}
+/*spacing between reference1 and reference2*/
+.reference2{
+	margin-top: 40px;
+}

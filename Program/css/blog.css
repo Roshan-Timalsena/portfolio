@@ -1,0 +1,19 @@
+.blog{
+	justify-content: center;		/*aligns the contents inside the blog to center*/
+	margin-left:15%; 
+	margin-right:15%;
+	margin-top: 15px;
+	padding:9px;
+	width:50%;
+	border-radius: 30px;			/*adds rounded corners to the div border*/
+	box-shadow: 0 0 10px steelblue;	/*adds shadow to around the div*/
+}
+
+.aside{
+	color:white;
+	position: absolute;			/*Allows the div to move freely within the page*/
+	top: 13%;
+	left:69%;
+	border:2px solid steelblue;	/*gives thickness, type and color to the div border*/
+	border-radius: 30px;
+}

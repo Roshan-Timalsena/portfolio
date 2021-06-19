@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<!--Meta tags-->
+	<meta charset="utf-8">
+	<meta name="description" content="Roshan's Portfolio">
+	<meta name="author" content="Roshan Timaslsena">
+	
+	<!--Linking external style sheets-->
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	
+	<!--Linking external java script-->
+	<script src="javascript/validateForm.js"></script>
+</head>
+<style type="text/css">
+	/*Changing the background color of the body*/
+	body{
+		background-color: #282828;
+	}
+</style>
+<body>
+	<!--Navigation Starts here -->
+	<nav>
+		<!--list starts here-->
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html" class="active">Contact</a></li>
+			<li><a href="research.html">Research</a></li>
+		</ul>
+		<!--list ends here-->
+	</nav>
+	<!-- navigation ends here-->
+
+	<!--heading and defining its position and color -->
+	<h2 style="margin-top:30px; margin-left:37%; margin-bottom: 8px;color: orange; "> LEAVE YOUR FEEDBACK BELOW</h2>
+
+	<center><!--Aligns the division to the center of the page -->
+		<!--Section containing form starts here -->
+		<div class="form-container">
+			<!--Form starts here -->
+			<form method="POST" onsubmit="return validateForm();" name="messageForm">
+				<input class="input0" type="text" name="name" placeholder="Name"><br>
+				<input class="input0" type="email" name="email" placeholder="Email"><br>
+				<input class="input0" type="text" name="phone" placeholder="Phone" maxlength="10"><br>
+				<textarea class="input0-1" name="feedback" placeholder="Feedback" rows="2" cols="24"></textarea><br>
+				<input class="btnSubmit" type="submit" name="submi" value="Submit">
+			</form>
+			<!--Form ends here -->
+		</div>
+		<!--Section containing form ends here -->
+	</center>
+	
+	<!--Footer starts here-->
+	<footer>
+		<center>
+			<!--Table Starts here-->
+			<table>
+				<tr align="center">
+					<th>&copy;</th>
+					<th>Roshan Timalsena, All Rights Resereved.</th>
+				</tr>
+			</table>
+			<!--Table ends here-->
+		</center> 
+	</footer>
+	<!--Footer ends here -->
+	
+
+</body>
+</html>

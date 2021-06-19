@@ -1,0 +1,28 @@
+.container{
+	border:2px solid steelblue;
+	margin-top:15% ;
+	margin-left: 5%;
+	margin-right: 7%;
+	padding:5px;
+	border-radius: 30px;
+	display: flex;		/*The container div becomes flexible by setting its display property to flex*/
+}
+/*definning position of the div containing icon-pic*/
+.icon{
+	position: absolute;
+	top:11%;
+	left:45%;
+}
+/*Defining bordder style, geight, and shadow of the inage*/
+.icon-pic{
+	border-radius: 800%;
+	height:150px;
+	box-shadow: 0 0 7px white;
+}
+
+.info,.education,.interests,.experiences,.links{
+	display: flex;
+	flex-direction: column; /*Set the direction of the flexible items inside the div elements*/
+	margin-left: 15px;
+	margin-top: 10px;
+}

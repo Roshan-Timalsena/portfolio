@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!--Meta tags-->
+	<meta charset="utf-8">
+	<meta name="description" content="Roshan's Portfolio">
+	<meta name="author" content="Roshan Timaslsena">
+	
+	<!--Linking external style sheets-->
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+</head>
+<style type="text/css">
+	body{
+		background-color: #282828;
+	}
+	/*Defining font family, size, position and color of heading*/
+	h2{
+		font-family:Times New Roman, Times, serif; 
+		font-size:30px;
+		margin:0;
+		padding:15px;
+		color:orange;
+	}
+	/*Spacing between row1 and row2*/
+	.row2,.row3{
+	padding-top: 25px;
+	}
+	/*defining size and color of paragraphs*/
+	.para{
+		font-size: 23px;
+		color: whitesmoke;
+	}
+
+	/*Giving border shadow to the image*/
+	.image{
+	box-shadow: 0 0 10px white;
+	}
+
+	/*Designing the paragraph*/
+	#message{
+		margin-top: 10px;
+		color: whitesmoke;
+		font-size: 20px;
+	}
+	/*Designing the button*/
+	.btn{
+		margin-top: 10px;
+		font-size: 17px;
+		background:transparent;
+	}
+</style>
+
+<body>
+	<!--Navigation Starts here -->
+	<nav>
+		<!--list starts here-->
+		<ul>
+			<li><a href="home.html" class="active">Home</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="research.html">Research</a></li>
+		</ul>
+		<!--list ends here-->
+	</nav>
+	<!-- navigation ends here-->
+
+	<!--Flex container a big container row-->
+	<div class="flex-container">
+		<!--First column inside the flex container starts here-->
+		<div class="col1">
+			<div class="image">
+				<img src="images/img1.jpg" alt="image of Roshan">
+			</div>
+		</div>
+		<!--first column inside the flex container ends here-->
+
+		<!--second column inside the flex container starts here-->
+		<div class="col2">
+			<!--First row inside the second column starts here-->
+			<div class="row1">
+				<h2>Welcome!!</h2>
+				<p class="para">Hello! I am <b style="color:orange;">Roshan Timalsena</b> and this is my webpage. <br>Know more about me<br>
+					<br><a class="link" href="cv.html">About Me</a>
+
+				</p>
+			</div>
+			<!--first row inside the second column ends here-->
+
+			<!--second row inside the second column starts here-->
+			<div class="row2">
+				<h2>Blogs</h2>
+				<p class="para">I write blogs whenever I get some free time to spare. My recent blog was about <b style="color:orange;">"Technology in Daily Lives"</b> <br>Read more about it by clicking below<br>
+					<br> <a class="link" href="blog.html">Read More</a>
+				</p>
+			</div>
+			<!--second row inside the second column ends here-->
+			<div class="row3">
+				<p style="color:whitesmoke; font-size: 20px;">Click the button below to see a <strong style="color:orange;">Hidden Message!</strong></p>
+				<button class="btn" type="button" onclick="change()">Click Here</button><!-- When clicked invokes the change function-->
+				<p id="message"></p>
+			</div>
+		</div>
+		<!--second column inside the flex container ends here-->
+	</div>
+	<!--flex container ends here-->
+
+	<!--Footer starts here-->
+	<footer>
+		<center>
+			<!--Table starts here-->
+			<table>
+				<tr align="center">
+					<th>&copy;</th>
+					<th>Roshan Timalsena, All Rights Resereved.</th>
+				</tr>
+			</table>
+			<!--Table ends here-->
+		</center>
+	</footer>
+	<!--Footer ends here-->		
+
+	<!--Internal JavaScript starts here-->
+	<script type="text/javascript">
+	function change(){
+		document.getElementById("message").innerHTML = "Thank You! for visiting my web page ;) "; //displays the quoted statement
+	}
+	</script>
+	<!--JAvaScript ends-->
+	</body>
+</html>
